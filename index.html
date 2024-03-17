@@ -26,6 +26,39 @@ commit after every sub task / regularly-->
     .header h1 {
       font-size: 45px;
     }
+    nav {
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links{
+      flex: 1;
+      text-align: right;
+    }
+    .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+    }
+    .nav-links ul li a {
+      color:#950740;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .nav-links ul li::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: #C3073F;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+      width: 100%;
+    }
 
 </style>
 </head>
@@ -35,6 +68,14 @@ commit after every sub task / regularly-->
   <h1>Aberdeen</h1>
   <p>Bon Accord!</p>
 </div>
+
+    <div class="nav-links">
+      <ul>
+        <li><a href="">Home</a><li>
+        <li><a href="">History</a><li>
+        <li><a href="">Visit</a><li>
+      </ul>
+    </div>
 
 </body>
 </html>
