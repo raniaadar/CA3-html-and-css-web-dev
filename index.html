@@ -103,6 +103,35 @@ commit after every sub task / regularly-->
     }
     .map-col img{
       width: 100%;
+      display: block
+    }
+    .layer {
+      background: transparent;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.5s;
+    }
+    .layer:hover {
+      background: rgba(226,0,0,0.7);
+    }
+    .layer h3 {
+      width: 100%;
+      font-weight: 500;
+      color: #fff;
+      font-size: 26px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      opacity: 0;
+      transition: 0.5s;
+    }
+    .layer:hover h3 {
+      bottom: 49%;
+      opacity: 1;
     }
 
 </style>
@@ -149,9 +178,26 @@ commit after every sub task / regularly-->
   
   <div class="row">
     <div class="map-col">
-      <img src="map.jpg">
+      <img src="map.png">
       <div class="layer">
         <h3>MAP</h3>
+      </div>
+    </div>
+
+    <div class="map-col">
+      <img src="beach.png">
+      <div class="layer">
+        <h3>BEACH</h3>
+      </div>
+    </div>
+
+    <div class="map-col">
+      <img src="gallery.png">
+      <div class="layer">
+        <h3>GALLERY</h3>
+      </div>
+    </div>
+    
   </div>
 </section>
 
