@@ -59,12 +59,51 @@ commit after every sub task / regularly-->
     .nav-links ul li:hover::after{
       width: 100%;
     }
-  
+
     .about {
       width: 80%;
       margin: auto;
       text-align: center;
       padding-top: 50px;
+    }
+    .row {
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .about-col {
+      flex-basis: 31%;
+      background: #fff3f3;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+    h3 {
+      text-align: center;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+    .about-col:hover {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    }
+    .map {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .map-col {
+      flex-basis: 32%;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+    .map-col img{
+      width: 100%;
+    }
 
 </style>
 </head>
@@ -89,6 +128,32 @@ commit after every sub task / regularly-->
   <p>The city of Aberdeen welcomes you to explore our historic attractions and rich Scottish culture!</p>
 
   <div class="row">
-    
+    <div class="about-col">
+      <h3>About</h3>
+      <p>Aberdeen is a port city in northeast Scotland, where the Dee and Don rivers meet the North Sea. With an offshore petroleum industry, the city is home to an international population. It's also known as the Granite City for its many enduring grey-stone buildings.</p>
+    </div>
+    <div class="about-col">
+      <h3>Attractions</h3>
+      <p>Aberdeen has grown into a city of sprawling Victorian parks, top universities, high-end restaurants, and luxury shopping. It's not all about splashing the cash, though. Explore our Visit Page to find out more about the range of activites available!</p>
+    </div>
+    <div class="about-col">
+      <h3>Community</h3>
+      <p>In Aberdeen, you can expect a warm welcome no matter where you're from. We are proud of our rich cultural diversity and are striving to create an environment in our city where everyone can feel like they're welcome.</p>
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <h1>Explore The City</h1>
+  <p>Browse the map to find a wide range of restaurants, museums and more! Plan out your day trip here!
+  
+  <div class="row">
+    <div class="map-col">
+      <img src="map.jpg">
+      <div class="layer">
+        <h3>MAP</h3>
+  </div>
+</section>
+
 </body>
 </html>
