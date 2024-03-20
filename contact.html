@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>website page title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+  box-sizing: border-box;
+    }
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+    }
+    
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: #6f2232;
+      color: white
+    }
+    .header h1 {
+      font-size: 45px;
+    }
+    nav {
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links{
+      flex: 1;
+      text-align: right;
+    }
+    .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+    }
+    .nav-links ul li a {
+      color:#950740;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .nav-links ul li::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: #C3073F;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+      width: 100%;
+    }
+    .footer {
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+    }
+    .footer h4 {
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    .row {
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .visit {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .visit-col {
+      flex-basis: 31%;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      text-align: left;
+    }
+    .visit-col img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .visit-col p {
+      padding: 0;
+    }
+    .visit-col h3 {
+      margin-top: 16px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Visit</h1>
+</div>
+
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a><li>
+        <li><a href="history.html">History</a><li>
+        <li><a href="visit.html">Visit</a><li>
+      </ul>
+    </div>
+
+<section class="visit">
+  <h1>Want to Visit?</h1>
+  <p>This tells you all you need to know if you're thinking about visiting the Granite City for yourself!</p>
+
+  <div class="row">
+    <div class="visit-col">
+      <img src="attractions.png">
+      <h3>Attractions</h3>
+      <p>In Aberdeen there's lots to do, whether you're coming for a day trip or planning on staying for a while longer, this concrete city has lots to offer. The beach and renowned Codonas Theme Park make for fun days out with kids and family. There are a range of free museums, parks, and galleries to explore as well.</p>
+    </div>
+
+    <div class="visit-col">
+      <img src="dining.png">
+      <h3>Dining</h3>
+      <p>While the city offers plenty of traditional Scottish cuisine, there are a range of options from Indian, Chinese, Italian and many more. If you have any dietary restrictions, there are many amazing vegan and even halal restaurants that ensure their food is prepared with the utmost care and consideration.</p>
+    </div>
+
+    <div class="visit-col">
+      <img src="accomodation.png">
+      <h3>Accomodation</h3>
+      <p>Need a place to stay while you're here? We've got you! Many of the hotels lie in the heart of Aberdeen in the city centre. Many are offered at very generous prices and allow you to be a small walking distance away from many of the city's iconic monuments. Access to bus routes is made easy for simple travel.</p>
+    </div>
+  </div>
+</section>
+
+<section class="review">
+
+</section
+
+<section class="footer">
+  <h4>Our Message</h4>
+  <p>We pride ourselves on being the best Tourist Association that Aberdeen has to offer.<br>We guarantee we will make your time in Aberdeen as magical as we can so you can enjoy the Granite City as much as we do!</p>
+</body>
+</html>
